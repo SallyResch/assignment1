@@ -1,4 +1,4 @@
-:root{
+:root {
     --background-color: #0F4C5C;
     --background-color-light: #26b0d2;
     --header-color: #5F0F40;
@@ -6,7 +6,8 @@
     --text-color2: #E36414;
     --text-color3: #9A031E;
 }
-.main{
+
+.main {
     background-image: url(../images/fallingleaves.jpg);
     background-size: cover;
     display: flex;
@@ -14,34 +15,40 @@
     align-items: center;
     flex-direction: column;
 }
-.main__title{
+
+.main__title {
     background-color: #5F0F40;
     padding: 10px 15px;
     border-radius: 5px;
 }
-.user-information{
+
+.user-information {
     background-color: var(--background-color);
     padding: 15px;
     border-radius: 10px;
     border: 5px solid var(--header-color);
     margin-bottom: 25px;
 }
-fieldset{
+
+fieldset {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
     background-color: var(--header-color);
 }
-.user-input{
+
+.user-input {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
 }
-.description{
+
+.description {
     height: 100px;
 }
-fieldset{
+
+fieldset {
     border-radius: 5px;
     border: 3px solid var(--background-color-light);
 }

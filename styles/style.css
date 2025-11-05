@@ -1,24 +1,28 @@
-:root{
+:root {
     --background-color: #0F4C5C;
     --header-color: #5F0F40;
     --text-color1: #FB8B24;
     --text-color2: #E36414;
     --text-color3: #9A031E;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-html{
+
+html {
     height: 100vh;
 }
-body{
+
+body {
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     margin: 0;
     height: 100%;
 }
-.header{
+
+.header {
     background-color: var(--header-color);
     padding: 24px;
     width: 100%;
@@ -26,18 +30,21 @@ body{
     display: flex;
     flex-direction: column;
 }
-.header__title{
+
+.header__title {
     margin-top: 0;
     text-align: center;
     font-size: 2rem;
 }
-.menu{
+
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
 }
-.menu__link{
+
+.menu__link {
     background-color: var(--background-color);
     border-radius: 5px;
     border: 2px solid var(--text-color2);
@@ -48,63 +55,83 @@ body{
     font-weight: bold;
     color: var(--text-color2);
 }
-.menu__link:hover{
+
+.menu__link:hover {
     background-color: var(--text-color2);
     color: var(--background-color);
 }
-.main{
+
+.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--text-color1);
 }
-.main__items{
+
+.main__items {
     margin: 0 32px;
 }
-.main__item{
+
+.main__item {
     font-size: larger;
 }
-.main__images{
+
+.main__images {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.image{
+
+.image {
     height: auto;
     margin-bottom: 1em;
 }
-.image.car{
+
+.image.car {
     width: 30%;
 }
-.image.bicycle{
+
+.image.bicycle {
     width: 20%;
 }
-.image.motorcycle{
+
+.image.motorcycle {
     width: 20%;
 }
-.footer{
+
+.footer {
     color: var(--text-color1);
     background-color: var(--header-color);
     padding: 24px;
     text-align: center;
     width: 100%;
 }
-@media only screen and (max-width: 600px){
-    .main__images{
+
+@media only screen and (max-width: 600px) {
+    .main__images {
         display: flex;
         flex-direction: column;
     }
-    .image{
+
+    .image {
         padding-bottom: 24px;
     }
-    .image.car{
+
+    .image.car {
         width: 70%;
     }
-    .image.bicycle{
+
+    .image.bicycle {
         width: 50%;
     }
-    .image.motorcycle{
+
+    .image.motorcycle {
         width: 50%;
     }
 }
